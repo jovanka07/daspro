@@ -31,11 +31,13 @@ void memilih_menu(){
 
     string menu[100];
 
+    bool selesai = false;
+
     for(int i = 0 ; i <= 2 ; i++){
         cout << "Pilih menu :";
         cin >> pilihMenu[i];
 
-        if(pilihMenu[i] <= 4 ){
+        if(pilihMenu[i] <= 2 ){
             switch(pilihMenu[i]){
                 case 1 : menu[i] = "mie";
                         hargaMenu[i] = 12000;
@@ -95,9 +97,7 @@ void cari_menu(){
         //Jika salah
         cout << "Makanan tidak di temukan pada -" << pilihMakanan << endl;
     }
-
-
-
+}
 int main(){
     int menu;
     string ulang;
@@ -122,6 +122,7 @@ int main(){
         if(pass==passBenar&&username==usernameBenar){
             cout<<"selamat datang\n";
             cout << "Menu mie & batagor" << endl;
+            //Silahkan tambahkan switch case untuk search dan memilih makanan
             nama_pelanggan();
             memilih_menu();
             break;
