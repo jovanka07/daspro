@@ -31,8 +31,6 @@ void memilih_menu(){
 
     string menu[100];
 
-    bool selesai = false;
-
     for(int i = 0 ; i <= 2 ; i++){
         cout << "Pilih menu :";
         cin >> pilihMenu[i];
