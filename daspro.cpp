@@ -10,7 +10,7 @@ Anggota kelompok :
 
 //pelanggan
 //menu
-//metode pembayaran
+//metode pembayarann
 void nama_pelanggan(){
     string namaPelanggan;
     cout << "A/n Pelanggan ? ";
