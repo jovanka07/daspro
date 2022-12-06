@@ -8,7 +8,6 @@ Anggota kelompok :
 4. Nadila putri p 2209757 */
 
 
-
 //pelanggan
 //menu
 //metode pembayaran
@@ -32,6 +31,7 @@ void memilih_menu(){
     int metodePembayaran;
 
     string menu[100];
+    //Input nama pelanggan
     string namaPelanggan;
     cout << "\t\t\t\t A/n Pelanggan ? ";
     cin >> namaPelanggan;
@@ -41,9 +41,9 @@ void memilih_menu(){
     //input jumblah menu yang ingin di pesan (Lakukan pengulangan)
 
     cout<<"\t\t\t\t    <--------(MENU)-------->\n";
-    cout<<"\t\t\t\t    1.Mie\n";
-    cout<<"\t\t\t\t    2.Batagor\n";
-    cout<<"\t\t\t\t    3.Baso \n";
+    cout<<"\t\t\t\t    1.Mie = Rp.12000\n";
+    cout<<"\t\t\t\t    2.Batagor = Rp.10000\n";
+    cout<<"\t\t\t\t    3.Baso = Rp.5000\n";
     cout << "\t\t\t\t Ingin memilih berapa menu? "  ;
     cin >> memilihJumblahMenu;
 
@@ -95,20 +95,20 @@ void memilih_menu(){
             cin >> metodePembayaran;
             if(metodePembayaran == 1){
                 //Output nama + total pembayaran + metode pembayaran
-                cout << "Hii " << namaPelanggan << endl;
-                cout << "Jumblah total pesanan anda : " << totalBayar << endl <<" dan metode pembayaran anda : " << "Dana" << endl;
+                cout << "Nama Pelaggan :" << namaPelanggan << endl;
+                cout << "Jumblah total pesanan anda : " << totalBayar << endl << "dan metode pembayaran anda : " << "Dana" << endl;
             }else if(metodePembayaran == 2){
                 //Output nama + total pembayaran + metode pembayaran
-                cout << "Hii " << namaPelanggan << endl;
-                cout << "Jumblah total pesanan anda : " << totalBayar << endl <<  " dan metode pembayaran anda : " << "Ovo" << endl;
+                cout << "Nama Pelaggan : " << namaPelanggan << endl;
+                cout << "Jumblah total pesanan anda : " << totalBayar << endl <<  "dan metode pembayaran anda : " << "Ovo" << endl;
             }else if(metodePembayaran == 3){
                 //Output nama + total pembayaran + metode pembayaran
-                cout << "Hii " << namaPelanggan << endl;
-                cout << "Jumblah total pesanan anda : " << totalBayar << endl << " dan metode pembayaran anda : " << "LinkAja" << endl;
+                cout << "Nama Pelaggan :" << namaPelanggan << endl;
+                cout << "Jumblah total pesanan anda : " << totalBayar << endl << "dan metode pembayaran anda : " << "LinkAja" << endl;
             }else if(metodePembayaran == 4){
                 //Output nama + total pembayaran + metode pembayaran
-                cout << "Hii " << namaPelanggan << endl;
-                cout << "Jumblah total pesanan anda : " << totalBayar << endl << " dan metode pembayaran anda : " << "Jenius" << endl;
+                cout << "Nama Pelaggan :" << namaPelanggan << endl;
+                cout << "Jumblah total pesanan anda : " << totalBayar << endl << "dan metode pembayaran anda : " << "Jenius" << endl;
             }else{
                 cout << "\t\t\t\t Metode pembayaran tidak tersedia";
             }
